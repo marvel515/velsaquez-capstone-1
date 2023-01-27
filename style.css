@@ -5,50 +5,38 @@
 
 }
 
-ul {
-    list-style-type: none;
-    position: fixed;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    z-index:10;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #04AA6D;
-}
-
 .bg-image {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    left: 0vw;
     object-fit: cover;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -10;
+}
+
+.bg-project {
+    width: 75%;
+}
+
+#landing {
+    top: 0vh;
+}
+
+#profile {
+    top: 100vh;
+}
+
+#projects {
+    top: 200vh
+}
+
+#contact {
+    top: 300vh;
 }
 
 .bg-content {
     float: left;
-    padding-top: 25vh
+    padding-top: 15vh
 }
 
 .my-photo {
@@ -88,12 +76,12 @@ hr {
 
 .prof-content {
     float: left;
-    padding-top: 25vh
+    padding-top: 15vh
 }
 
 .who-me {
     font-family: 'Coustard', serif;
-    color: #5d8ea6;
+    color: #E8D2A6;
 }
 
 
@@ -110,7 +98,7 @@ hr {
 
 .proj-current {
    font-family: 'Coustard', serif;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -118,24 +106,12 @@ hr {
     width: 100vw;
     margin: 0px;
 }
- 
-.bg-project2 {
-/*    background-image: url("./images/bg webdev.jpg");*/
-    /*height: 100vh;
-    width:auto;*/
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
 
 .scroll-click {
     font-family: 'Overpass', sans-serif;
     font-size: 24px;
     color: #E8D2A6;
-    padding-top: 50px;
+    padding-top: 10px;
     text-align: center;
 
 }
@@ -154,9 +130,25 @@ hr {
 }
 
 .contact-how {
-    padding-top: 150px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+
+.form-contact {
+    background-color: #2d2728;
+    position: center;
+    border-style: dashed ;
+    border-width: 5px;
+    border-color: #ea9e16;
+    border-radius: 45px;
+    margin: auto;
+}
+
+.btn-color {
+    background-color: #ea9e16;
+}
+
 
 .bg-foot { 
     background-color: #333333;  
@@ -167,10 +159,11 @@ hr {
 }
 
 .footer-position {
-    position: relative;
+    position: absolute;
     color: white;
     background-color: black;
-    top: 100px;
+    top: 400vh;
+    bottom: 0px;
     height: 40px;
     width: 100%;
     padding-top: 10px;
